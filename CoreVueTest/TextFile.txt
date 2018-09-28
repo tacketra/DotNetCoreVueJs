@@ -1,0 +1,7 @@
+﻿Things you need once you create new project
+
+Copy from here https://github.com/MarkPieszak/aspnetcore-Vue-starter
+1. copy to base dir of proj - Webpack.config.js, webpack.config.vendor.js (third party libs), .babelrc, package.json
+2. Copy client app folder to  base dir
+3. Npm install to get all front end dependencies
+4. Npm run build
