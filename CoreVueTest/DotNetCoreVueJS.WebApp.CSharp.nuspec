@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DotNetCoreVueJS.WebApp.CSharp</id>
+    <version>1.0.0</version>
+    <description>
+      Creates a new .NET core VueJS app
+    </description>
+    <authors>Ryan Tackett</authors>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="**" exclude="**\*.dll;obj\**\*.*;bin\**\*.*;node_modules\**\*.*" />
+    <file src=".babelrc" />
+  </files>
+</package>

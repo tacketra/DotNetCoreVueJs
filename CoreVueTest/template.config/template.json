@@ -1,0 +1,9 @@
+﻿{
+  "title": ".NET core vue js template",
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Ryan Tackett",
+  "classifications": [ "Common", "Console" ],
+  "identity": "DotNetCoreVueJS.WebApp.CSharp",
+  "name": "DotNetCoreVueJS Web app",
+  "shortName": "DotNetCoreVueJS"
+}

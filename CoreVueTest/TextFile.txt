@@ -1,7 +1,29 @@
-﻿Things you need once you create new project
+﻿Currently the template I'm making fails on npm run build. Should I be including the solution in the template?
+
+Things you need once you create new project
 
 Copy from here https://github.com/MarkPieszak/aspnetcore-Vue-starter
 1. copy to base dir of proj - Webpack.config.js, webpack.config.vendor.js (third party libs), .babelrc, package.json
 2. Copy client app folder to  base dir
 3. Npm install to get all front end dependencies
 4. Npm run build
+
+------------------------- Nuget and .NET core templating instructions --------------------------------
+Creating a template instructions - https://docs.microsoft.com/en-us/dotnet/core/tutorials/create-custom-template
+
+Install [Nuget] package
+1. Update .nuspec file with changes
+2. nuget pack "path to .nuspecfile",  -NoDefaultExcludes (include files starting witha  dot)
+ nuget pack DotNetCoreVueJS.WebApp.CSharp.nuspec -NoDefaultExcludes 
+
+Install [template] for Nuget package
+1. dotnet new -i "path to .nupkg"
+ dotnet new -i DotNetCoreVueJS.WebApp.CSharp.1.0.0.nupkg 
+
+Create a [project] out of the new template
+1. dotnet new "template ShortName"
+ dotnet new DotNetCoreVueJS
+
+Uninstall a [template] from local nuget package
+1. dotnet new -u "template id"
+ dotnet new -u DotNetCoreVueJS.WebApp.CSharp
