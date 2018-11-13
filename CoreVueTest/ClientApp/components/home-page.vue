@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Hello, world!</h1>
-        <p>Welcome to your new single-page application, built with: </p>
+        <p>Welcome!! to your new single-page application, built with: </p>
         <ul>
             <li><a href="https://get.asp.net/"><icon :icon="['fab', 'microsoft']"/> ASP.NET Core</a> and <a href="https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx">C#</a>                    for cross-platform server-side code</li>
             <li><a href="https://vuejs.org/"><icon :icon="['fab', 'vuejs']"/> Vue.js</a> for client-side code</li>
@@ -35,6 +35,8 @@
 
         <strong>Contact us today: </strong>
         <p><a href="mailto:hello@devhelp.online"><icon icon="envelope"/> Hello@DevHelp.Online</a></p>
+
+        <button asp-controller="Home" asp-action="Privacy" method="get" class="btn btn-info navbar-btn">Learn More</button>
     </div>
 </template>
 

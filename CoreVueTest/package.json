@@ -23,7 +23,8 @@
     "vue-server-renderer": "^2.5.16",
     "vue-template-compiler": "^2.5.16",
     "vuex": "^2.5.0",
-    "vuex-router-sync": "^4.3.2"
+    "vuex-router-sync": "^4.3.2",
+    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome": "^1.1.4",

@@ -1,4 +1,7 @@
-﻿Currently the template I'm making fails on npm run build. Should I be including the solution in the template?
+﻿Current Issues!
+
+I cannot get .net core tag helpers to work in my .vue files. Is this not possible?
+-----------------------------------------
 
 Things you need once you create new project
 
@@ -11,7 +14,7 @@ Copy from here https://github.com/MarkPieszak/aspnetcore-Vue-starter
 ------------------------- Nuget and .NET core templating instructions --------------------------------
 Creating a template instructions - https://docs.microsoft.com/en-us/dotnet/core/tutorials/create-custom-template
 
-Install [Nuget] package
+Install [Nuget] package (make sure to delete the .nupkg before repacking)
 1. Update .nuspec file with changes
 2. nuget pack "path to .nuspecfile",  -NoDefaultExcludes (include files starting witha  dot)
  nuget pack DotNetCoreVueJS.WebApp.CSharp.nuspec -NoDefaultExcludes 

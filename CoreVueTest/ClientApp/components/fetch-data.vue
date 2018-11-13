@@ -68,17 +68,21 @@ export default {
       // TypeScript can also transpile async/await down to ES5
       this.currentPage = page
 
-      try {
-        var from = (page - 1) * (this.pageSize)
-        var to = from + this.pageSize
-        let response = await this.$http.get(`/api/weather/forecasts?from=${from}&to=${to}`)
-        console.log(response.data.forecasts)
-        this.forecasts = response.data.forecasts
-        this.total = response.data.total
-      } catch (err) {
-        window.alert(err)
-        console.log(err)
-      }
+        try
+        {
+            var from = (page - 1) * (this.pageSize)
+            var to = from + this.pageSize
+            let response = await this.$http.get(`/api/weather/forecasts?from=${from}&to=${to}`)
+            console.log(response.data.forecasts)
+            this.forecasts = response.data.forecasts
+            this.total = response.data.total
+        }
+        catch (err)
+        {
+            window.alert(err)
+            console.log(err)
+        }
+
       // Old promise-based approach
       // this.$http
       //    .get('/api/SampleData/WeatherForecasts')
